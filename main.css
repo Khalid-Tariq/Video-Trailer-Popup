@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Gabarito&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+.main-container {
+  width: 95%;
+  display: flex;
+  margin: 100px;
+  background-color: #0607071a;
+  padding: 50px 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1540px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+.txt-container {
+  padding: 40px;
+  padding-right: 50px;
+}
+img {
+  max-width: 400px;
+  height: auto;
+}
+.title {
+  margin-bottom: 40px;
+}
+.lorem {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+.details {
+  margin-bottom: 30px;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .txt-container {
+    padding: 10px;
+  }
+  .lorem {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+}
+.watchbtn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #1a6069;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+}
+
+.watchbtn:hover,
+.watchbtn:focus {
+  background-color: #1a6069e1;
+}
+
+.addToWatch {
+  padding: 10px;
+  background-color: rgb(255, 94, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.addToWatch:hover,
+.addToWatch:focus {
+  background-color: rgba(255, 94, 0, 0.829);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.video-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.video-container video {
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .video-container video {
+    width: 100%;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: none;
+}
+.closeBtn:hover,
+.closeBtn :focus {
+  background-color: rgba(255, 0, 0, 0.63);
+}
+
+.dNone {
+  display: flex;
+}
